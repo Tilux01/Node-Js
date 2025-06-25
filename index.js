@@ -19,7 +19,11 @@ app.get(students,(req,res)=>{
 })
 
 app.get("/",()=>{
-    res.send("Hello world")
+    try {
+        res.send("Hello world")
+    } catch (error) {
+        console.log(error);
+    }
 })
 
 
