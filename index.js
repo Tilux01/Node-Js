@@ -18,6 +18,7 @@ app.get(students,(req,res)=>{
     res.send(allStudent)
 })
 
+
 app.get("/",()=>{
     try {
         res.send("Hello world")
